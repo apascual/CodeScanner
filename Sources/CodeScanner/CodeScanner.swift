@@ -160,7 +160,7 @@ public struct CodeScannerView: UIViewControllerRepresentable {
         var captureSession: AVCaptureSession!
         var previewLayer: AVCaptureVideoPreviewLayer!
         var delegate: ScannerCoordinator?
-        let videoCaptureDevice = AVCaptureDevice.default(for: .video, position: .front)
+        let videoCaptureDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front)
 
         private let showViewfinder: Bool
 
